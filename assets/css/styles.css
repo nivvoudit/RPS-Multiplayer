@@ -1,0 +1,75 @@
+body {
+  width: 99%;
+  height: 900px;
+  background:
+    linear-gradient(45deg, hsla(352, 96%, 45%, 1) 0%, hsla(352, 96%, 45%, 0) 70%),
+    linear-gradient(135deg, hsla(253, 95%, 42%, 1) 10%, hsla(253, 95%, 42%, 0) 80%),
+    linear-gradient(225deg, hsla(179, 91%, 45%, 1) 10%, hsla(179, 91%, 45%, 0) 80%),
+    linear-gradient(315deg, hsla(119, 96%, 49%, 1) 100%, hsla(119, 96%, 49%, 0) 70%);
+  text-align: center;
+}
+
+#chatbox {
+  border: 5px solid black;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+#chat {
+  margin-bottom: 10px;
+}
+
+#chatbox {
+  height: 200px;
+  text-align: left;
+  background-color: white;
+  padding: 10px;
+}
+
+#side1 {
+  border: 1px solid black;
+}
+
+#side2 {
+  border: 1px solid black;
+}
+
+#p1Buttons {
+  visibility: hidden;
+}
+
+#p2Buttons {
+  visibility: hidden;
+}
+
+#chatbox {
+  overflow: scroll;
+}
+
+#player1Name {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+#player2Name {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.winloss {
+  margin-bottom: 20px;
+}
+
+#title {
+  margin-bottom: 30px;
+}
+
+#userMessage {
+  padding: 2px 2px 2px 4px;
+}
+
+p {
+  margin-bottom: 2px;
+}

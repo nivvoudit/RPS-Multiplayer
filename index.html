@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+
+</head>
+<body>
+  <div class = "row" id = "title">
+    <div class = "col-md-3"></div>
+    <div class = "col-md-6 page-header"><h1>Rock Paper Scissors</h1></div>
+    <div class = "col-md-3"></div>
+  </div>
+
+  <div class = "row" id = "nameEntry">
+    <div class = "col-md-4"></div>
+    <div class = "col-md-4">
+      <form name = "message">
+        <input name="userName" type="text" id="userName" size="50" placeholder = "Your Name"/>
+        <input name="submitName" type="submit" id="start" value="Start" />
+      </form>
+    </div>
+    <div class = "col-md-4"></div>
+  </div>
+
+  <div class = "row" id = "content">
+    <div class = "col-md-1"></div>
+
+    <div class = "col-md-4" id = "side1">
+      <div class = "row names">
+        <div class = "col-md-3"></div>
+        <div class = "col-md-6" id="player1Name">Waiting for Player 2</div>
+        <div class = "col-md-3"></div>
+      </div>
+
+      <div class = "row options">
+        <div class = "col-md-4"></div>
+        <div class = "col-md-4" id = "p1Buttons">
+          <button class = "btn btn-default optionsP1" data-pick = "rock">Rock</button>
+          <button class = "btn btn-default optionsP1" data-pick = "paper">Paper</button>
+          <button class = "btn btn-default optionsP1" data-pick = "scissors">Scissors</button>
+        </div>
+        <div class = "col-md-4"></div>
+      </div>
+
+      <div class = "row winloss">
+        <div class = "col-md-3"></div>
+        <div class = "col-md-6" id = "p1WL"></div>
+        <div class = "col-md-3"></div>
+      </div>
+
+    </div>
+
+    <div class = "col-md-2" id = "middle">
+      <div class = "row" id = "timer">
+      </div>
+
+      <div class = "row" id = "winner">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-8" id = "playerWin"></div>
+        <div class = "col-md-2"></div>
+      </div>
+    </div>
+
+    <div class = "col-md-4" id = "side2">
+      <div class = "row names">
+        <div class = "col-md-3"></div>
+        <div class = "col-md-6" id="player2Name">Waiting for Player 2</div>
+        <div class = "col-md-3"></div>
+      </div>
+
+      <div class = "row options">
+        <div class = "col-md-4"></div>
+        <div class = "col-md-4" id = "p2Buttons">
+          <button class = "btn btn-default optionsP2" data-pick = "rock">Rock</button>
+          <button class = "btn btn-default optionsP2" data-pick = "paper">Paper</button>
+          <button class = "btn btn-default optionsP2" data-pick = "scissors">Scissors</button>
+        </div>
+        <div class = "col-md-4"></div>
+      </div>
+
+      <div class = "row winloss">
+        <div class = "col-md-3"></div>
+        <div class = "col-md-6" id = "p2WL"></div>
+        <div class = "col-md-3"></div>
+      </div>
+
+    </div>
+
+    <div class = "col-md-1"></div>
+  </div>
+
+  <div class = "row" id = "chat">
+    <div class = "col-md-3"></div>
+    <div class = "col-md-6" id = "chatbox"></div>
+    <div class = "col-md-3"></div>
+  </div>
+
+  <div class = "row" id = "message">
+    <div class = "col-md-3"></div>
+    <div class = "col-md-6">
+      <form name = "message">
+        <input name="userMessage" type="text" id="userMessage" size="70" placeholder="Type a message to send"/>
+        <input name="submitMessage" type="submit"  id="submitMessage" value="Send" />
+      </form>
+    </div>
+    <div class = "col-md-3"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyDac-yxkcKkXQ2z256TAlsIaMISZXUjOtM",
+          authDomain: "rock-paper-scissors-682e3.firebaseapp.com",
+          databaseURL: "https://rock-paper-scissors-682e3.firebaseio.com",
+          projectId: "rock-paper-scissors-682e3",
+          storageBucket: "rock-paper-scissors-682e3.appspot.com",
+          messagingSenderId: "282932002122"
+        };
+        firebase.initializeApp(config);
+      </script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./assets/javascript/main.js"></script>
+</body>
+</html>
